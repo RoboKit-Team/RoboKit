@@ -6,10 +6,10 @@ package de.github.robokit;
  *
  */
 public class CommandHandler {
-	String Befehl;
+	String Command;
 	Logger log = new Logger();
-public CommandHandler(String Befehl) {
-	this.Befehl = Befehl;
+public CommandHandler(String Command) {
+	this.Command = Command;
 }
 	/**
 	 * Check Commands
@@ -18,11 +18,11 @@ public CommandHandler(String Befehl) {
 	 */
 	public String befehl() {
 		// TODO Auto-generated method stub
-		if(Befehl.equalsIgnoreCase("/help")){
+		if(Command.equalsIgnoreCase("/help")){
 			log.Info("Help Command send");
 			return "See Documentation";
 			
-		}else if(Befehl.equalsIgnoreCase("/shutdown")){
+		}else if(Command.equalsIgnoreCase("/shutdown")){
 			log.Error("**Shutdown**");
 			System.exit(-1);
 			

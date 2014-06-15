@@ -17,7 +17,7 @@ static Logger log = new Logger();
  * @param args
  */
 	public static void main(String[] args) {
-		log.Info("Projekt 14 \n 0.0.1 \n (c)Fabian Cernota | Maurice Schneider \n Shell started");
+		log.Info("RoboKit \n Shell started");
 		getShell();
 		
 	}
